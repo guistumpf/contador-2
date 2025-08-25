@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contador</title>
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: aqua;
+            color: white;
+        }
+
+        div {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        button {
+            background-color: grey;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 100px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div>
+        <h1>Contador</h1>
+        <p>0</p>
+        <button onclick="mais()">mais</button>
+    </div>
+
+
+    <script>
+
+        let numero = 0
+
+
+        function mais() {
+            numero = numero + 1
+            tela()
+        }
+
+        function tela() {
+            const p = document.querySelector("p")
+            p.innerText = numero
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
